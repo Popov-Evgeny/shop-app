@@ -1,0 +1,18 @@
+.error-block {
+    width: 500px;
+    height: 300px;
+    margin: 150px auto;
+    text-align: center;
+}
+
+.error-title {
+    font-size: 32px;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.error-subtitle {
+    font-size: 20px;
+    font-weight: 400;
+    font-style: italic;
+}

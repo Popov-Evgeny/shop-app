@@ -1,0 +1,29 @@
+.nav-bar {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    background: #000;
+    padding: 0 15px;
+}
+
+.nav-logo {
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    margin: 0 auto;
+}
+
+.nav-links li {
+    padding: 0 5px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links .active {
+    color: violet;
+}
