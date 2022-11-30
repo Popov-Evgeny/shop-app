@@ -6,16 +6,27 @@ export const shopApi = createApi({
     baseQuery: fetchBaseQuery({
         baseUrl: 'https://fakestoreapi.com'
     }),
+    refetchOnFocus: false,
     endpoints: build => ({
-        searchProducts: build.query<Product[], string>({
-            query: (search: string) => ({
+        getProducts: build.query<Product[], string>({
+            query: (amount:string) => ({
                 url: '/products',
                 params: {
-                    limit: search
+                    limit: amount
                 }
             })
-        })
+        }),
+        getCategories: build.query<string[], void>({
+            query: () => ({
+                url: `/products/categories`,
+            })
+        }),
+        getCategoryProduct: build.query<Product[], string>({
+            query: (category) => ({
+                url: `/products/category/${category}`,
+            })
+        }),
     })
 });
 
-export const {useSearchProductsQuery} = shopApi;
+export const {useGetProductsQuery, useLazyGetCategoriesQuery} = shopApi;

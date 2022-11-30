@@ -1,13 +1,13 @@
 import React from 'react';
 import './Navigations.css';
-import {NavLink} from "react-router-dom";
+import {Link, NavLink} from "react-router-dom";
 
 
 const Navigations = () => {
     return (
         <nav className="nav-bar">
             <div className="nav-logo">
-                <h3>Shop</h3>
+                <Link to="/">Shop</Link>
             </div>
             <ul className="nav-links">
                 <li>

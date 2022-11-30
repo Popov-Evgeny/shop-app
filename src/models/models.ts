@@ -6,3 +6,9 @@ export interface Product {
     description: string,
     image: string
 }
+
+export interface Comment {
+    id: number,
+    userId: number,
+    title: string,
+}

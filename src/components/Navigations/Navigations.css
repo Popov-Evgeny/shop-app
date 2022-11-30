@@ -6,8 +6,11 @@
     padding: 0 15px;
 }
 
-.nav-logo {
-    color: white;
+.nav-logo a {
+    font-size: 25px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #fff;
 }
 
 .nav-links {
@@ -25,5 +28,5 @@
 }
 
 .nav-links .active {
-    color: violet;
+    color: blueviolet;
 }
